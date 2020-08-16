@@ -43,15 +43,15 @@ CREATE TABLE "dept_emp" (
     "emp_no" INTEGER   NOT NULL,
     "dept_no" VARCHAR   NOT NULL,
     CONSTRAINT "pk_dept_emp" PRIMARY KEY (
-        "emp_no"
+        "emp_no","dept_no"
      )
 );
 
 CREATE TABLE "dept_manager" (
-    "emp_no" INTEGER   NOT NULL,
     "dept_no" VARCHAR   NOT NULL,
+	"emp_no" INTEGER   NOT NULL,
     CONSTRAINT "pk_dept_manager" PRIMARY KEY (
-        "emp_no"
+        "emp_no","dept_no"
      )
 );
 
